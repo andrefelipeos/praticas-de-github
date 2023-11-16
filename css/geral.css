@@ -1,0 +1,33 @@
+.formulario-campo {
+    display: flex;
+    justify-content: center;
+}
+
+label, input, select, button, output {
+    margin: 0.25rem 0.5rem;
+}
+
+body {
+    font-family: 'Ubuntu Mono', 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+main {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#saida {
+    margin-top: 1rem;
+}
+
+button {
+    margin: 1rem;
+    font-size: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}

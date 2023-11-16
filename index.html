@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+</head>
+
+<body>
+    <main>
+        <h1>Conversor de Temperatura</h1>
+        <hr>
+        <form action="">
+            <div class="formulario-campo">
+                <label for="temp_entrada">Temperatura:</label>
+                <input id="temp_entrada"
+                    type="number"
+                    name="temp_entrada"
+                    step="0.01">
+            </div>
+
+            <div class="formulario-campo">
+                <label for="unidade_entrada">Unidade da Entrada:</label>
+                <select id="unidade_entrada" name="unidade_entrada">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="unidade_saida">Unidade da Saída:</label>
+                <select id="unidade_saida" name="unidade_saida">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="formulario-campo" id="saida">
+                <label for="temp_saida">Temperatura Convertida:</label>
+                <output id="temp_saida">?</output>
+            </div>
+            <hr>
+            <div class="formulario-campo">
+                <button type="button" onclick="converteTemperatura()">
+                    Converter
+                </button>
+            </div>
+        </form>
+    </main>
+    <script src="js/conversoes.js"></script>
+</body>
+
+</html>
